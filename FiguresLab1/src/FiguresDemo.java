@@ -43,5 +43,11 @@ public class FiguresDemo {
 		myRegion.addShape("Полилиния", myPolyline);
 		myRegion.removeShape("Окружность");
 		System.out.println(myRegion);
+		
+		System.out.println(myPolygon.getClass());
+		
+		ShapesFactory sf = new ShapesFactory();
+		Shape myCircle1 = sf.createShape("Circle");
+		System.out.println(myCircle1);
 	}
 }
