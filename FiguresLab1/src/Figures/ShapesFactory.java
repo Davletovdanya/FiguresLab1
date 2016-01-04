@@ -1,19 +1,18 @@
-
+package Figures;
 public class ShapesFactory {
 
-	//private Shape sh;
-	
+	// private Shape sh;
+
 	public ShapesFactory() {
-		
+
 	}
 
-	public Shape createShape(String str){
+	public Shape createShape(String str) {
 		Shape sh = null;
-		if(str.equals("Circle")){
+		if (str.equals("Circle")) {
 			Circle myCyrcle = new Circle(new Point(0, 0), 5);
 			return myCyrcle;
-		}
-		else{
+		} else {
 			try {
 				throw new Exception("“ип не найден");
 			} catch (Exception e) {
